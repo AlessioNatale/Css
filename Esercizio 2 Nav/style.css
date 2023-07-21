@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(20, 33, 46);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+div, ul, li, select{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+#navbar{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+select, button{
+    border: none;
+    background-color: rgb(20, 33, 46);
+    color: gray;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color:gray;
+}
+
+a:hover{
+    color: white;
+}
+
+input{
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+}
+
+#search{
+    border: 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    margin-right: 60px;
+
+}
+
+#search:hover{
+    color: darkgreen;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+}
+
+
+
