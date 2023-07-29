@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  display: grid;
+  grid-template-areas:
+  "display display display display"
+  "quattro quattro quattro quattro"
+  "tre tre tre risultato"
+  "tre tre tre risultato"
+  "tre tre tre risultato"
+  "tre tre tre risultato" 
+  ;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+  grid-area: display;
+  text-align: right;
+  font-size: 30px;
+  padding: 15px;
+  height: 40px;
+  background-color: #545a6d;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.quattro{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-area: quattro;
+}
+
+.quattro> .btn{
+    background-color: #87a6b3;
+}
+
+.tre{
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-area: tre;
+}
+
+.btn {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  height: 70px;
+  width: 100px;
+  background-color: #f5f5f5;
+  border: 1px solid #2c2e3369;
+}
+
+
+.risultato{
+    grid-area: risultato;
+}
+
+.risultato> .btn{
+    height: 280px;
+    background-color: rgba(221, 74, 87, 0.993);
+    border-radius: 0 0 10px 0;
+}
+
+.left{
+    border-radius: 0 0 0 10px;
+}
+.btn:hover {
+  background-color: #e0e0e0;
+}
